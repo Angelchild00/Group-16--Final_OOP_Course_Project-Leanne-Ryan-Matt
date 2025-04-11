@@ -1,0 +1,100 @@
+\doxysection{NNClassifier Class Reference}
+\hypertarget{class_n_n_classifier}{}\label{class_n_n_classifier}\index{NNClassifier@{NNClassifier}}
+
+
+Implements the Nearest Neighbor classification algorithm.  
+
+
+
+
+{\ttfamily \#include $<$NNClassifier.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203}\label{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203} 
+{\bfseries NNClassifier} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_n_n_classifier}{NNClassifier}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a2b3f32d88e812425cbe717b9651f5cf0}{train}} (const std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ \&data) override
+\begin{DoxyCompactList}\small\item\em Stores training data for use in prediction. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_n_n_classifier_a5d8a7941a265a932fc3e1a42989c9509}{predict}} (const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&input) override
+\begin{DoxyCompactList}\small\item\em Predicts the label for a given input vector using the Nearest Neighbor algorithm. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_n_n_classifier_a06676ddc00f2bde04465aef7d41981c3}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the name of the classifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_classifier}{Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_classifier_a689add14a8f421fc395060f0cb0f1d58}{\texorpdfstring{$\sim$}{\string~}\+Classifier}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements the Nearest Neighbor classification algorithm. 
+
+This classifier uses Euclidean distance to determine the closest labeled sample from the training data and assigns its label to the input vector. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_n_n_classifier_a06676ddc00f2bde04465aef7d41981c3}\index{NNClassifier@{NNClassifier}!getName@{getName}}
+\index{getName@{getName}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_n_n_classifier_a06676ddc00f2bde04465aef7d41981c3} 
+std\+::string NNClassifier\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the name of the classifier. 
+
+\begin{DoxyReturn}{Returns}
+A string\+: "{}\+Nearest Neighbour Classifier"{}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_classifier_ae1b6b5f6a63c4c7169323586e61725f6}{Classifier}}.
+
+\Hypertarget{class_n_n_classifier_a5d8a7941a265a932fc3e1a42989c9509}\index{NNClassifier@{NNClassifier}!predict@{predict}}
+\index{predict@{predict}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily \label{class_n_n_classifier_a5d8a7941a265a932fc3e1a42989c9509} 
+std\+::string NNClassifier\+::predict (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Predicts the label for a given input vector using the Nearest Neighbor algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & A \doxylink{class_vector3_d}{Vector3D} representing the gravity vector of the phone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The label of the closest matching training sample. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_classifier_a6e94fa734e992b929a2f83cd226591a9}{Classifier}}.
+
+\Hypertarget{class_n_n_classifier_a2b3f32d88e812425cbe717b9651f5cf0}\index{NNClassifier@{NNClassifier}!train@{train}}
+\index{train@{train}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily \label{class_n_n_classifier_a2b3f32d88e812425cbe717b9651f5cf0} 
+void NNClassifier\+::train (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stores training data for use in prediction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A vector of labeled \doxylink{class_sample_data}{Sample\+Data} used to train the classifier. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_classifier_aa02a39196ab587c39dee23d8b4e8b6f4}{Classifier}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+NNClassifier.\+h\item 
+NNClassifier.\+cpp\end{DoxyCompactItemize}

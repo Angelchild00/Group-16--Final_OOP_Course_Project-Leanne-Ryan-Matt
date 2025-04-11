@@ -1,0 +1,71 @@
+\doxysection{Read\+Write\+To\+File Class Reference}
+\hypertarget{class_read_write_to_file}{}\label{class_read_write_to_file}\index{ReadWriteToFile@{ReadWriteToFile}}
+
+
+Provides static methods to read sample data and write classification results to files.  
+
+
+
+
+{\ttfamily \#include $<$Read\+Write\+To\+File.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ \mbox{\hyperlink{class_read_write_to_file_a1e6e494fec9005857e7fe1453dcf520b}{read\+Samples}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Reads labeled sample data from a file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_read_write_to_file_a495fbd8780a84e73222fa10772709431}{write\+Results}} (const std\+::string \&filen\+Name, const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_vector3_d}{Vector3D}}, std\+::string $>$ $>$ \&results)
+\begin{DoxyCompactList}\small\item\em Writes classification results to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides static methods to read sample data and write classification results to files. 
+
+This class is responsible for low-\/level file operations, including parsing. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_read_write_to_file_a1e6e494fec9005857e7fe1453dcf520b}\index{ReadWriteToFile@{ReadWriteToFile}!readSamples@{readSamples}}
+\index{readSamples@{readSamples}!ReadWriteToFile@{ReadWriteToFile}}
+\doxysubsubsection{\texorpdfstring{readSamples()}{readSamples()}}
+{\footnotesize\ttfamily \label{class_read_write_to_file_a1e6e494fec9005857e7fe1453dcf520b} 
+std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ Read\+Write\+To\+File\+::read\+Samples (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads labeled sample data from a file. 
+
+Expects each line in the file to follow the format\+: x,y,z,label
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{class_sample_data}{Sample\+Data} entries extracted from the file. 
+\end{DoxyReturn}
+\Hypertarget{class_read_write_to_file_a495fbd8780a84e73222fa10772709431}\index{ReadWriteToFile@{ReadWriteToFile}!writeResults@{writeResults}}
+\index{writeResults@{writeResults}!ReadWriteToFile@{ReadWriteToFile}}
+\doxysubsubsection{\texorpdfstring{writeResults()}{writeResults()}}
+{\footnotesize\ttfamily \label{class_read_write_to_file_a495fbd8780a84e73222fa10772709431} 
+void Read\+Write\+To\+File\+::write\+Results (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filen\+Name}{, }\item[{const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_vector3_d}{Vector3D}}, std\+::string $>$ $>$ \&}]{results}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writes classification results to a file. 
+
+Each line is formatted as\+: (x, y, z) -\/\texorpdfstring{$>$}{>} predicted\+Label
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the output file. \\
+\hline
+{\em results} & A vector of pairs, where each pair contains a \doxylink{class_vector3_d}{Vector3D} and its predicted label. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Read\+Write\+To\+File.\+h\item 
+Read\+Write\+To\+File.\+cpp\end{DoxyCompactItemize}

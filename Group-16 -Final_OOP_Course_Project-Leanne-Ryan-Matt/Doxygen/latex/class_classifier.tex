@@ -1,0 +1,106 @@
+\doxysection{Classifier Class Reference}
+\hypertarget{class_classifier}{}\label{class_classifier}\index{Classifier@{Classifier}}
+
+
+Abstract base class for all classifiers.  
+
+
+
+
+{\ttfamily \#include $<$Classifier.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_classifier_a689add14a8f421fc395060f0cb0f1d58}{\texorpdfstring{$\sim$}{\string~}\+Classifier}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_classifier_aa02a39196ab587c39dee23d8b4e8b6f4}{train}} (const std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ \&data)=0
+\begin{DoxyCompactList}\small\item\em Train the classifier with a set of labeled data samples. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_classifier_a6e94fa734e992b929a2f83cd226591a9}{predict}} (const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&input)=0
+\begin{DoxyCompactList}\small\item\em Predict the label of an input vector. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_classifier_ae1b6b5f6a63c4c7169323586e61725f6}{get\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieve the name of the classifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for all classifiers. 
+
+Defines the interface that all classifier implementations must follow. Includes methods for training, predicting, and identifying the classifier. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_classifier_a689add14a8f421fc395060f0cb0f1d58}\index{Classifier@{Classifier}!````~Classifier@{\texorpdfstring{$\sim$}{\string~}Classifier}}
+\index{````~Classifier@{\texorpdfstring{$\sim$}{\string~}Classifier}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Classifier()}{\string~Classifier()}}
+{\footnotesize\ttfamily \label{class_classifier_a689add14a8f421fc395060f0cb0f1d58} 
+virtual Classifier\+::\texorpdfstring{$\sim$}{\string~}\+Classifier (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual destructor. 
+
+Ensures proper cleanup of derived classes when using polymorphism. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_classifier_ae1b6b5f6a63c4c7169323586e61725f6}\index{Classifier@{Classifier}!getName@{getName}}
+\index{getName@{getName}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_classifier_ae1b6b5f6a63c4c7169323586e61725f6} 
+virtual std\+::string Classifier\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieve the name of the classifier. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the classifier\textquotesingle{}s name. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_another_classifier_a4bf7217768cd22d8c634766f932f87f0}{Another\+Classifier}}, and \mbox{\hyperlink{class_n_n_classifier_a06676ddc00f2bde04465aef7d41981c3}{NNClassifier}}.
+
+\Hypertarget{class_classifier_a6e94fa734e992b929a2f83cd226591a9}\index{Classifier@{Classifier}!predict@{predict}}
+\index{predict@{predict}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily \label{class_classifier_a6e94fa734e992b929a2f83cd226591a9} 
+virtual std\+::string Classifier\+::predict (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Predict the label of an input vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & A \doxylink{class_vector3_d}{Vector3D} representing the input features. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representing the predicted label. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_another_classifier_addc821f0e6cb010f969c509903377e2a}{Another\+Classifier}}, and \mbox{\hyperlink{class_n_n_classifier_a5d8a7941a265a932fc3e1a42989c9509}{NNClassifier}}.
+
+\Hypertarget{class_classifier_aa02a39196ab587c39dee23d8b4e8b6f4}\index{Classifier@{Classifier}!train@{train}}
+\index{train@{train}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily \label{class_classifier_aa02a39196ab587c39dee23d8b4e8b6f4} 
+virtual void Classifier\+::train (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Train the classifier with a set of labeled data samples. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A vector of \doxylink{class_sample_data}{Sample\+Data} used for training. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_another_classifier_a8dc0ae2b893947b29b97fbd915f79aa5}{Another\+Classifier}}, and \mbox{\hyperlink{class_n_n_classifier_a2b3f32d88e812425cbe717b9651f5cf0}{NNClassifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Classifier.\+h\end{DoxyCompactItemize}

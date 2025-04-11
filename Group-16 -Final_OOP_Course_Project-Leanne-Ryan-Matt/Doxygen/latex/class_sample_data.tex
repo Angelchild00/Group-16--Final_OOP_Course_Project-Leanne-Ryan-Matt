@@ -1,0 +1,132 @@
+\doxysection{Sample\+Data Class Reference}
+\hypertarget{class_sample_data}{}\label{class_sample_data}\index{SampleData@{SampleData}}
+
+
+Represents a labeled data sample consisting of a gravity vector and a corresponding label.  
+
+
+
+
+{\ttfamily \#include $<$Sample\+Data.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sample_data_abe966ba33d20121b90914843a1014bfd}\label{class_sample_data_abe966ba33d20121b90914843a1014bfd} 
+{\bfseries Sample\+Data} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_sample_data}{Sample\+Data}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sample_data_a78e65a3738548f4133027bfe3ec8b99b}{Sample\+Data}} (const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&vector, const std\+::string \&label)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_sample_data_a071d3297a88f9355eff894c6bb3a14e4}{get\+Vector}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector component of the sample. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_sample_data_af020de3783140eaef9c0962b597ec3cf}{get\+Label}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the label of the sample. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sample_data_ae3905e0ea27c1874a43b75b046688729}{set\+Vector}} (const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&vec)
+\begin{DoxyCompactList}\small\item\em Sets the vector component of the sample. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sample_data_a8085d36a085e02272690d2ae8dd5d199}{set\+Label}} (const std\+::string \&label)
+\begin{DoxyCompactList}\small\item\em Sets the label for the sample. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_sample_data_a4a4e6c0e8b938c937b92ea1dba4ff12d}{to\+String}} () const
+\begin{DoxyCompactList}\small\item\em Converts the sample to a formatted string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a labeled data sample consisting of a gravity vector and a corresponding label. 
+
+Used for both training and prediction in classifier systems. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sample_data_a78e65a3738548f4133027bfe3ec8b99b}\index{SampleData@{SampleData}!SampleData@{SampleData}}
+\index{SampleData@{SampleData}!SampleData@{SampleData}}
+\doxysubsubsection{\texorpdfstring{SampleData()}{SampleData()}}
+{\footnotesize\ttfamily \label{class_sample_data_a78e65a3738548f4133027bfe3ec8b99b} 
+Sample\+Data\+::\+Sample\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&}]{vector}{, }\item[{const std\+::string \&}]{label}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The gravity vector. \\
+\hline
+{\em label} & The orientation label. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sample_data_af020de3783140eaef9c0962b597ec3cf}\index{SampleData@{SampleData}!getLabel@{getLabel}}
+\index{getLabel@{getLabel}!SampleData@{SampleData}}
+\doxysubsubsection{\texorpdfstring{getLabel()}{getLabel()}}
+{\footnotesize\ttfamily \label{class_sample_data_af020de3783140eaef9c0962b597ec3cf} 
+std\+::string Sample\+Data\+::get\+Label (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the label of the sample. 
+
+\begin{DoxyReturn}{Returns}
+The label as a string. 
+\end{DoxyReturn}
+\Hypertarget{class_sample_data_a071d3297a88f9355eff894c6bb3a14e4}\index{SampleData@{SampleData}!getVector@{getVector}}
+\index{getVector@{getVector}!SampleData@{SampleData}}
+\doxysubsubsection{\texorpdfstring{getVector()}{getVector()}}
+{\footnotesize\ttfamily \label{class_sample_data_a071d3297a88f9355eff894c6bb3a14e4} 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} Sample\+Data\+::get\+Vector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector component of the sample. 
+
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_vector3_d}{Vector3D} object. 
+\end{DoxyReturn}
+\Hypertarget{class_sample_data_a8085d36a085e02272690d2ae8dd5d199}\index{SampleData@{SampleData}!setLabel@{setLabel}}
+\index{setLabel@{setLabel}!SampleData@{SampleData}}
+\doxysubsubsection{\texorpdfstring{setLabel()}{setLabel()}}
+{\footnotesize\ttfamily \label{class_sample_data_a8085d36a085e02272690d2ae8dd5d199} 
+void Sample\+Data\+::set\+Label (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{label}{}\end{DoxyParamCaption})}
+
+
+
+Sets the label for the sample. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & The new label to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sample_data_ae3905e0ea27c1874a43b75b046688729}\index{SampleData@{SampleData}!setVector@{setVector}}
+\index{setVector@{setVector}!SampleData@{SampleData}}
+\doxysubsubsection{\texorpdfstring{setVector()}{setVector()}}
+{\footnotesize\ttfamily \label{class_sample_data_ae3905e0ea27c1874a43b75b046688729} 
+void Sample\+Data\+::set\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&}]{vec}{}\end{DoxyParamCaption})}
+
+
+
+Sets the vector component of the sample. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The new \doxylink{class_vector3_d}{Vector3D} to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sample_data_a4a4e6c0e8b938c937b92ea1dba4ff12d}\index{SampleData@{SampleData}!toString@{toString}}
+\index{toString@{toString}!SampleData@{SampleData}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_sample_data_a4a4e6c0e8b938c937b92ea1dba4ff12d} 
+std\+::string Sample\+Data\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Converts the sample to a formatted string. 
+
+\begin{DoxyReturn}{Returns}
+A string representation\+: "{}(x, y, z) -\/$>$ label"{}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sample\+Data.\+h\item 
+Sample\+Data.\+cpp\end{DoxyCompactItemize}

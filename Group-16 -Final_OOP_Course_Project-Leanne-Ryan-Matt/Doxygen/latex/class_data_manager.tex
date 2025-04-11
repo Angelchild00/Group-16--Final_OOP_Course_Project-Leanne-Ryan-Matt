@@ -1,0 +1,71 @@
+\doxysection{Data\+Manager Class Reference}
+\hypertarget{class_data_manager}{}\label{class_data_manager}\index{DataManager@{DataManager}}
+
+
+Handles loading and saving data for the classifier system.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Manager.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ \mbox{\hyperlink{class_data_manager_a781bad2942d03d370f427371b86166fd}{load\+Data\+From\+File}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads labeled training or test data from a file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_data_manager_ae414cc5d990efc1bcb18705c77be5d40}{write\+Results\+To\+File}} (const std\+::string \&file\+Name, const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_vector3_d}{Vector3D}}, std\+::string $>$ $>$ \&results)
+\begin{DoxyCompactList}\small\item\em Writes classification results to an output file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles loading and saving data for the classifier system. 
+
+Provides static methods for reading labeled sample data from files and writing prediction results to output files. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data_manager_a781bad2942d03d370f427371b86166fd}\index{DataManager@{DataManager}!loadDataFromFile@{loadDataFromFile}}
+\index{loadDataFromFile@{loadDataFromFile}!DataManager@{DataManager}}
+\doxysubsubsection{\texorpdfstring{loadDataFromFile()}{loadDataFromFile()}}
+{\footnotesize\ttfamily \label{class_data_manager_a781bad2942d03d370f427371b86166fd} 
+std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ Data\+Manager\+::load\+Data\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads labeled training or test data from a file. 
+
+Each line of the file should contain comma-\/separated values in the format\+: x,y,z,label
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the input file to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{class_sample_data}{Sample\+Data} objects parsed from the file. 
+\end{DoxyReturn}
+\Hypertarget{class_data_manager_ae414cc5d990efc1bcb18705c77be5d40}\index{DataManager@{DataManager}!writeResultsToFile@{writeResultsToFile}}
+\index{writeResultsToFile@{writeResultsToFile}!DataManager@{DataManager}}
+\doxysubsubsection{\texorpdfstring{writeResultsToFile()}{writeResultsToFile()}}
+{\footnotesize\ttfamily \label{class_data_manager_ae414cc5d990efc1bcb18705c77be5d40} 
+void Data\+Manager\+::write\+Results\+To\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name}{, }\item[{const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_vector3_d}{Vector3D}}, std\+::string $>$ $>$ \&}]{results}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writes classification results to an output file. 
+
+Each line is formatted as\+: (x, y, z) -\/\texorpdfstring{$>$}{>} predicted\+Label
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the output file. \\
+\hline
+{\em results} & A vector of pairs where each pair contains a \doxylink{class_vector3_d}{Vector3D} and the predicted label. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Data\+Manager.\+h\item 
+Data\+Manager.\+cpp\end{DoxyCompactItemize}

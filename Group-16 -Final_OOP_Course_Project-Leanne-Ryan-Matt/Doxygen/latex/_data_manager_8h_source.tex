@@ -1,0 +1,16 @@
+\doxysection{Data\+Manager.\+h}
+\hypertarget{_data_manager_8h_source}{}\label{_data_manager_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}SampleData.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data_manager}{DataManager}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<SampleData>\ \mbox{\hyperlink{class_data_manager_a781bad2942d03d370f427371b86166fd}{loadDataFromFile}}(\textcolor{keyword}{const}\ std::string\&\ fileName);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_manager_ae414cc5d990efc1bcb18705c77be5d40}{writeResultsToFile}}(\textcolor{keyword}{const}\ std::string\&\ fileName,\ \textcolor{keyword}{const}\ std::vector<std::pair<Vector3D,\ std::string>>\&\ results);}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+
+\end{DoxyCode}

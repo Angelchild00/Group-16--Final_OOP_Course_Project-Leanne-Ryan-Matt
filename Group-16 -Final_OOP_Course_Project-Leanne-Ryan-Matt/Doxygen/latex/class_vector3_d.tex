@@ -1,0 +1,186 @@
+\doxysection{Vector3D Class Reference}
+\hypertarget{class_vector3_d}{}\label{class_vector3_d}\index{Vector3D@{Vector3D}}
+
+
+A class to store and manage 3D gravity vector values (x, y, z).  
+
+
+
+
+{\ttfamily \#include $<$Vector3\+D.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vector3_d_a0b11a8d75da427b27443d8a94d0d296c}\label{class_vector3_d_a0b11a8d75da427b27443d8a94d0d296c} 
+{\bfseries Vector3D} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Initializes all components to 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d_abd851542da40b1168edcad11fa83b7c2}{Vector3D}} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_vector3_d_a6eb2b565b36b32858b79714151fc6df0}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Gets the x value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_vector3_d_a40ae4bf4605ba79725876e00861f74c6}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Gets the y value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_vector3_d_a9a4b4c6ee6f7bffa65fb81b2ace4a8eb}{getZ}} () const
+\begin{DoxyCompactList}\small\item\em Gets the z value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vector3_d_a32b5b166189ccb48ee1e7a4cbea1719e}{setX}} (double x)
+\begin{DoxyCompactList}\small\item\em Sets the x value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vector3_d_a7a1ec37357274ad482062b1b35928bbf}{setY}} (double y)
+\begin{DoxyCompactList}\small\item\em Sets the y value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vector3_d_afc123137fab8bc02c4cdc12af684fdc9}{setZ}} (double z)
+\begin{DoxyCompactList}\small\item\em Sets the z value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_vector3_d_a0f3088486a889c5a8ccab3d136ce9ecb}{distance\+To}} (const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&other) const
+\begin{DoxyCompactList}\small\item\em Calculates the Euclidean distance between this vector and another. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_vector3_d_ad3846fedc31b71ceaed7de0fa565f610}{to\+String}} () const
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to store and manage 3D gravity vector values (x, y, z). 
+
+Used to represent the orientation-\/related input data for classification. Includes methods for access, distance calculation, and string formatting. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_vector3_d_abd851542da40b1168edcad11fa83b7c2}\index{Vector3D@{Vector3D}!Vector3D@{Vector3D}}
+\index{Vector3D@{Vector3D}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{Vector3D()}{Vector3D()}}
+{\footnotesize\ttfamily \label{class_vector3_d_abd851542da40b1168edcad11fa83b7c2} 
+Vector3\+D\+::\+Vector3D (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{, }\item[{double}]{z}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Gravity value along the x-\/axis. \\
+\hline
+{\em y} & Gravity value along the y-\/axis. \\
+\hline
+{\em z} & Gravity value along the z-\/axis. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vector3_d_a0f3088486a889c5a8ccab3d136ce9ecb}\index{Vector3D@{Vector3D}!distanceTo@{distanceTo}}
+\index{distanceTo@{distanceTo}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{distanceTo()}{distanceTo()}}
+{\footnotesize\ttfamily \label{class_vector3_d_a0f3088486a889c5a8ccab3d136ce9ecb} 
+double Vector3\+D\+::distance\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates the Euclidean distance between this vector and another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \doxylink{class_vector3_d}{Vector3D} object to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Euclidean distance as a double. 
+\end{DoxyReturn}
+\Hypertarget{class_vector3_d_a6eb2b565b36b32858b79714151fc6df0}\index{Vector3D@{Vector3D}!getX@{getX}}
+\index{getX@{getX}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \label{class_vector3_d_a6eb2b565b36b32858b79714151fc6df0} 
+double Vector3\+D\+::getX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the x value. 
+
+\begin{DoxyReturn}{Returns}
+Value of x. 
+\end{DoxyReturn}
+\Hypertarget{class_vector3_d_a40ae4bf4605ba79725876e00861f74c6}\index{Vector3D@{Vector3D}!getY@{getY}}
+\index{getY@{getY}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily \label{class_vector3_d_a40ae4bf4605ba79725876e00861f74c6} 
+double Vector3\+D\+::getY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the y value. 
+
+\begin{DoxyReturn}{Returns}
+Value of y. 
+\end{DoxyReturn}
+\Hypertarget{class_vector3_d_a9a4b4c6ee6f7bffa65fb81b2ace4a8eb}\index{Vector3D@{Vector3D}!getZ@{getZ}}
+\index{getZ@{getZ}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{getZ()}{getZ()}}
+{\footnotesize\ttfamily \label{class_vector3_d_a9a4b4c6ee6f7bffa65fb81b2ace4a8eb} 
+double Vector3\+D\+::getZ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the z value. 
+
+\begin{DoxyReturn}{Returns}
+Value of z. 
+\end{DoxyReturn}
+\Hypertarget{class_vector3_d_a32b5b166189ccb48ee1e7a4cbea1719e}\index{Vector3D@{Vector3D}!setX@{setX}}
+\index{setX@{setX}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily \label{class_vector3_d_a32b5b166189ccb48ee1e7a4cbea1719e} 
+void Vector3\+D\+::setX (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Sets the x value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new x value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vector3_d_a7a1ec37357274ad482062b1b35928bbf}\index{Vector3D@{Vector3D}!setY@{setY}}
+\index{setY@{setY}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily \label{class_vector3_d_a7a1ec37357274ad482062b1b35928bbf} 
+void Vector3\+D\+::setY (\begin{DoxyParamCaption}\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Sets the y value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The new y value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vector3_d_afc123137fab8bc02c4cdc12af684fdc9}\index{Vector3D@{Vector3D}!setZ@{setZ}}
+\index{setZ@{setZ}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{setZ()}{setZ()}}
+{\footnotesize\ttfamily \label{class_vector3_d_afc123137fab8bc02c4cdc12af684fdc9} 
+void Vector3\+D\+::setZ (\begin{DoxyParamCaption}\item[{double}]{z}{}\end{DoxyParamCaption})}
+
+
+
+Sets the z value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & The new z value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vector3_d_ad3846fedc31b71ceaed7de0fa565f610}\index{Vector3D@{Vector3D}!toString@{toString}}
+\index{toString@{toString}!Vector3D@{Vector3D}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_vector3_d_ad3846fedc31b71ceaed7de0fa565f610} 
+std\+::string Vector3\+D\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns a string representation of the vector. 
+
+\begin{DoxyReturn}{Returns}
+A string in the format\+: (x, y, z) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vector3\+D.\+h\item 
+Vector3\+D.\+cpp\end{DoxyCompactItemize}

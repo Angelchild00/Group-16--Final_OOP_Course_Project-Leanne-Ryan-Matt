@@ -1,0 +1,97 @@
+\doxysection{Another\+Classifier Class Reference}
+\hypertarget{class_another_classifier}{}\label{class_another_classifier}\index{AnotherClassifier@{AnotherClassifier}}
+
+
+A placeholder class that implements the \doxylink{class_classifier}{Classifier} interface. Is not functional.  
+
+
+
+
+{\ttfamily \#include $<$Another\+Classifier.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_another_classifier_a8dc0ae2b893947b29b97fbd915f79aa5}{train}} (const std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ \&data) override
+\begin{DoxyCompactList}\small\item\em Prints a message to state that the function is not implemented. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_another_classifier_addc821f0e6cb010f969c509903377e2a}{predict}} (const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&input) override
+\begin{DoxyCompactList}\small\item\em Prints a message indicating prediction is not implemented. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_another_classifier_a4bf7217768cd22d8c634766f932f87f0}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the name of the classifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_classifier}{Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_classifier_a689add14a8f421fc395060f0cb0f1d58}{\texorpdfstring{$\sim$}{\string~}\+Classifier}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A placeholder class that implements the \doxylink{class_classifier}{Classifier} interface. Is not functional. 
+
+This class is currently used to represent polymorphism and abstraction. All functions only print that they are not implemented 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_another_classifier_a4bf7217768cd22d8c634766f932f87f0}\index{AnotherClassifier@{AnotherClassifier}!getName@{getName}}
+\index{getName@{getName}!AnotherClassifier@{AnotherClassifier}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_another_classifier_a4bf7217768cd22d8c634766f932f87f0} 
+std\+::string Another\+Classifier\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the name of the classifier. 
+
+\begin{DoxyReturn}{Returns}
+A string\+: "{}\+Another\+Classifier"{}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_classifier_ae1b6b5f6a63c4c7169323586e61725f6}{Classifier}}.
+
+\Hypertarget{class_another_classifier_addc821f0e6cb010f969c509903377e2a}\index{AnotherClassifier@{AnotherClassifier}!predict@{predict}}
+\index{predict@{predict}!AnotherClassifier@{AnotherClassifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily \label{class_another_classifier_addc821f0e6cb010f969c509903377e2a} 
+std\+::string Another\+Classifier\+::predict (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \&}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prints a message indicating prediction is not implemented. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & A \doxylink{class_vector3_d}{Vector3D} sample to classify (ignored). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A placeholder string "{}\+UNKNOWN"{}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_classifier_a6e94fa734e992b929a2f83cd226591a9}{Classifier}}.
+
+\Hypertarget{class_another_classifier_a8dc0ae2b893947b29b97fbd915f79aa5}\index{AnotherClassifier@{AnotherClassifier}!train@{train}}
+\index{train@{train}!AnotherClassifier@{AnotherClassifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily \label{class_another_classifier_a8dc0ae2b893947b29b97fbd915f79aa5} 
+void Another\+Classifier\+::train (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_sample_data}{Sample\+Data}} $>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prints a message to state that the function is not implemented. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A vector of data samples for training (not used). \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_classifier_aa02a39196ab587c39dee23d8b4e8b6f4}{Classifier}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Another\+Classifier.\+h\item 
+Another\+Classifier.\+cpp\end{DoxyCompactItemize}
